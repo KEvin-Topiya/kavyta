@@ -28,11 +28,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2">
-              <FooterLink href="/kavyata/services">Web Development</FooterLink>
-              <FooterLink href="/kavyata/services">Software Development</FooterLink>
-              <FooterLink href="/kavyata/services">Mobile App Development</FooterLink>
+              <FooterLink href="/services">Web Development</FooterLink>
+              <FooterLink href="/services">Software Development</FooterLink>
+              <FooterLink href="/services">Mobile App Development</FooterLink>
               {/* <FooterLink href="/services">Cloud Solutions</FooterLink> */}
-              <FooterLink href="/kavyata/services">IT Consulting</FooterLink>
+              <FooterLink href="/services">IT Consulting</FooterLink>
             </ul>
           </div>
 
@@ -40,11 +40,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Company</h4>
             <ul className="space-y-2">
-              <FooterLink href="/kavyata/about">About Us</FooterLink>
-              <FooterLink href="/kavyata/portfolio">Our Work</FooterLink>
-              <FooterLink href="/kavyata/testimonials">Testimonials</FooterLink>
-              <FooterLink href="/kavyata/blog">Blog</FooterLink>
-              <FooterLink href="/kavyata/contact">Contact</FooterLink>
+              <FooterLink href="/about">About Us</FooterLink>
+              <FooterLink href="/portfolio">Our Work</FooterLink>
+              <FooterLink href="/testimonials">Testimonials</FooterLink>
+              <FooterLink href="/blog">Blog</FooterLink>
+              <FooterLink href="/contact">Contact</FooterLink>
             </ul>
           </div>
 

@@ -8,13 +8,13 @@ const Navbar = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Home', path: '/kavyata/' },
-    { name: 'About', path: '/kavyata/about' },
-    { name: 'Services', path: '/kavyata/services' },
-    { name: 'Portfolio', path: '/kavyata/portfolio' },
-    { name: 'Testimonials', path: '/kavyata/testimonials' },
-    { name: 'Blog', path: '/kavyata/blog' },
-    { name: 'Contact', path: '/kavyata/contact' },
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Services', path: '/services' },
+    { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Testimonials', path: '/testimonials' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   useEffect(() => {
