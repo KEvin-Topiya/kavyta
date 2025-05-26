@@ -13,7 +13,7 @@ const technologies = [
 const services = [
   {
     title: 'Web Development',
-    path: '/kavyata/services/web-development',
+    path: '/services/web-development',
     description: 'Crafting responsive and dynamic websites to enhance your online presence.',
     imageUrl: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d',
     // imageUrl: 'https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg',
@@ -26,7 +26,7 @@ const services = [
   },
   {
     title: 'Software Development',
-    path: '/kavyata/services/software-development',
+    path: '/services/software-development',
     description: 'Developing robust software solutions to streamline your business operations.',
     imageUrl: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4',
     // imageUrl: 'https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg',
@@ -39,7 +39,7 @@ const services = [
   },
   {
     title: 'Mobile App Development',
-    path: '/kavyata/services/mobile-app-development',
+    path: '/services/mobile-app-development',
     description: 'Creating user-friendly mobile applications for iOS and Android platforms.',
     imageUrl: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c',
     // imageUrl: 'https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg',
@@ -78,7 +78,7 @@ const services = [
   // },
   {
     title: 'IT Consulting',
-    path: '/kavyata/services/it-consulting',
+    path: '/services/it-consulting',
     description: 'Providing expert guidance to optimize your IT strategies and infrastructure.',
     imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40',
     // imageUrl: 'https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg',
