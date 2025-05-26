@@ -23,23 +23,23 @@ const App = () => {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/kavyata/" element={<Home />} />
-            <Route path="/kavyata/about" element={<About />} />
-            <Route path="/kavyata/services" element={<Services />} />
-            <Route path="/kavyata/portfolio" element={<Portfolio />} />
-            <Route path="/kavyata/testimonials" element={<Testimonials />} />
-            <Route path="/kavyata/contact" element={<Contact />} />
-            <Route path="/kavyata/blog" element={<Blog />} />
-            <Route path="/kavyata/blog/:id" element={<BlogPost />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
 
             {/* Service detail pages */}
-            <Route path="/kavyata/services/web-development" element={<WebDevelopment />} />
-            <Route path="/kavyata/services/software-development" element={<SoftwareDevelopment />} />
-            <Route path="/kavyata/services/mobile-app-development" element={<MobileAppDevelopment />} />
-            <Route path="/kavyata/services/it-consulting" element={<ITConsulting />} />
+            <Route path="/services/web-development" element={<WebDevelopment />} />
+            <Route path="/services/software-development" element={<SoftwareDevelopment />} />
+            <Route path="/services/mobile-app-development" element={<MobileAppDevelopment />} />
+            <Route path="/services/it-consulting" element={<ITConsulting />} />
 
             {/* 404 Page */}
-            <Route path="/kavyata/*" element={<NotFound />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
