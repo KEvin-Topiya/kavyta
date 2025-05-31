@@ -3,7 +3,7 @@ import PageHeader from '../components/ui/PageHeader';
 import BlogCard from '../components/ui/BlogCard';
 import Button from '../components/ui/Button';
 import GlassCard from '../components/ui/GlassCard';
-
+import { Helmet } from 'react-helmet-async';
 const categories = ['All', 'Technology', 'Development', 'Design', 'Business', 'Security'];
 
 const blogPosts = [
@@ -73,6 +73,10 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-black pt-20 pb-16">
+      <Helmet>
+      <title>Blog | Kavyta</title>
+      <meta name="description" content="Read the latest articles, news, and insights from Kavyta." />
+    </Helmet>
       <div className="container mx-auto px-4">
         <PageHeader
           title="Our Blog"

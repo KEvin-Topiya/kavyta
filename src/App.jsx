@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
@@ -15,11 +15,20 @@ import SoftwareDevelopment from './pages/services/SoftwareDevelopment';
 import MobileAppDevelopment from './pages/services/MobileAppDevelopment';
 import ITConsulting from './pages/services/ITConsulting';
 import NotFound from './pages/NotFound';
-
+import { Helmet } from 'react-helmet-async';
 const App = () => {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-black text-white">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Kavyta | Innovative Tech Solutions</title>
+          <meta
+            name="description"
+            content="Kavyta offers cutting-edge web development, mobile apps, software services, and IT consulting."
+          />
+          <link rel="canonical" href="https://kavyta.site" />
+        </Helmet>
         <Navbar />
         <main className="flex-grow">
           <Routes>

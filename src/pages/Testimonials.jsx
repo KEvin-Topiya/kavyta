@@ -2,7 +2,7 @@ import React from 'react';
 import PageHeader from '../components/ui/PageHeader';
 import TestimonialCard from '../components/ui/TestimonialCard';
 import GlassCard from '../components/ui/GlassCard';
-
+import { Helmet } from 'react-helmet-async';
 const testimonials = [
   {
     content:
@@ -51,12 +51,20 @@ const companies = [
 
 const Testimonials = () => {
   return (
+    <>
+        <Helmet>
+      <title>Testimonials | Kavyta</title>
+      <meta
+        name="description"
+        content="Discover what our clients have to say about their experience working with Kavyta."
+      />
+    </Helmet>
     <div className="min-h-screen bg-black pt-20 pb-16">
       <div className="container mx-auto px-4">
         <PageHeader
           title="Client Testimonials"
           subtitle="Hear what our clients say about working with us"
-        />
+          />
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
@@ -113,6 +121,7 @@ const Testimonials = () => {
         </GlassCard>
       </div>
     </div>
+            </>
   );
 };
 

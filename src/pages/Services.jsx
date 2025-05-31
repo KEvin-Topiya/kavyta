@@ -4,7 +4,7 @@ import PageHeader from '../components/ui/PageHeader';
 import GlassCard from '../components/ui/GlassCard';
 import { CheckCircle2Icon, ArrowRightIcon } from 'lucide-react';
 import Button from '../components/ui/Button';
-
+import { Helmet } from 'react-helmet-async';
 const technologies = [
   'React', 'Node.js', 'Python', 'AWS', 'Azure',
   'Docker', 'Kubernetes', 'MongoDB', 'PostgreSQL', 'TypeScript'
@@ -120,12 +120,17 @@ const processSteps = [
 
 const Services = () => {
   return (
+    <>
+     <Helmet>
+      <title>Services | Kavyta</title>
+      <meta name="description" content="Explore our range of services including web and software development, mobile apps, and consulting." />
+    </Helmet>
     <div className="min-h-screen bg-black pt-20 pb-16">
       <div className="container mx-auto px-4">
         <PageHeader
           title="Our Services"
           subtitle="Comprehensive IT solutions tailored to your business needs"
-        />
+          />
 
         {/* Service Cards */}
         {services.map((service, index) => (
@@ -160,7 +165,7 @@ const Services = () => {
                     src={`${service.imageUrl}?auto=format&fit=crop&w=800&q=80`}
                     alt={service.title}
                     className="w-full h-full object-cover"
-                  />
+                    />
                 </div>
               </div>
             </div>
@@ -198,6 +203,7 @@ const Services = () => {
         </div>
       </div>
     </div>
+            </>
   );
 };
 

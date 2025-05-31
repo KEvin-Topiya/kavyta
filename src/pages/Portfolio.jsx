@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PageHeader from '../components/ui/PageHeader';
 import ProjectCard from '../components/ui/ProjectCard';
 import Button from '../components/ui/Button';
-
+import { Helmet } from 'react-helmet-async';
 const categories = ['All', 'Web', 'Mobile', 'Desktop', 'Cloud'];
 
 const projects = [
@@ -60,6 +60,10 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-black pt-20 pb-16">
+       <Helmet>
+      <title>Portfolio | Kavyta</title>
+      <meta name="description" content="Explore our portfolio and see the innovative projects we've delivered." />
+    </Helmet>
       <div className="container mx-auto px-4">
         <PageHeader
           title="Our Portfolio"

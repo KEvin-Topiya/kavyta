@@ -4,7 +4,7 @@ import GlassCard from '../components/ui/GlassCard';
 import Button from '../components/ui/Button';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import FloatingSphere from '../components/3d/FloatingSphere';
-
+import { Helmet } from 'react-helmet-async';
 const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +12,13 @@ const Contact = () => {
   };
 
   return (
+
     <div className="min-h-screen bg-black pt-20 pb-16">
+          <Helmet>
+      <title>Contact Us | Kavyta</title>
+      <meta name="description" content="Get in touch with Kavyta for your software and tech needs." />
+    </Helmet>
+
       <div className="container mx-auto px-4">
         <PageHeader
           title="Contact Us"

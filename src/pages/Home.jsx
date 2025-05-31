@@ -3,10 +3,14 @@ import HeroSection from '../components/sections/HeroSection';
 import ServicesSection from '../components/sections/ServicesSection';
 import FloatingCube from '../components/3d/FloatingCube';
 import GlassCard from '../components/ui/GlassCard';
-
+import { Helmet } from 'react-helmet-async';
 const Home = () => {
   return (
     <div className="bg-black">
+      <Helmet>
+      <title>Home | Kavyta</title>
+      <meta name="description" content="Welcome to Kavyta - Innovating the digital world." />
+    </Helmet>
       <HeroSection />
       <ServicesSection />
       <section className="py-20">

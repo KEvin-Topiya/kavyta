@@ -2,7 +2,7 @@ import React from 'react';
 import PageHeader from '../components/ui/PageHeader';
 import GlassCard from '../components/ui/GlassCard';
 import { Users2Icon, RocketIcon, TargetIcon } from 'lucide-react';
-
+import { Helmet } from 'react-helmet-async';
 const stats = [
   { label: 'Years of Experience', value: '1+' },
   { label: 'Projects Completed', value: '5' },
@@ -35,12 +35,17 @@ const teamMembers = [
 
 const About = () => {
   return (
+    <>
+    <Helmet>
+      <title>About Us | Kavyta</title>
+      <meta name="description" content="Learn more about Kavyta and our mission to innovate." />
+    </Helmet>
     <div className="min-h-screen bg-black pt-20 pb-16">
       <div className="container mx-auto px-4">
         <PageHeader
           title="About Us"
           subtitle="We're a team of passionate technologists building the future of digital solutions"
-        />
+          />
 
         {/* Story Section */}
         <div className="mb-20">
@@ -116,7 +121,7 @@ We're just getting started — and we're building with intention.
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
-                  />
+                    />
                 </div>
                 <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
                 <p className="text-gray-400 text-sm">{member.role}</p>
@@ -126,6 +131,7 @@ We're just getting started — and we're building with intention.
         </div>
       </div>
     </div>
+            </>
   );
 };
 
