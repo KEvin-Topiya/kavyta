@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; URL=./" />
+    <script type="text/javascript">
+      // Redirect to correct path (preserves sub-routes like /about, /blog, etc.)
+      (function () {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        var newPath = '/' + (path + search + hash).replace(/^\/+/, '');
+        window.location.replace(window.location.origin + newPath);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
