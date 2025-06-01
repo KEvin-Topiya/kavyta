@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kavyta.site/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://kavyta.site/services</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://kavyta.site/contact</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <!-- Add more URLs as needed -->
+  <url><loc>https://kavyta.site/</loc></url>
+  <url><loc>https://kavyta.site/about</loc></url>
+  <url><loc>https://kavyta.site/services</loc></url>
+  <url><loc>https://kavyta.site/services/web-development</loc></url>
+  <url><loc>https://kavyta.site/services/software-development</loc></url>
+  <url><loc>https://kavyta.site/services/mobile-app-development</loc></url>
+  <url><loc>https://kavyta.site/services/it-consulting</loc></url>
+  <url><loc>https://kavyta.site/portfolio</loc></url>
+  <url><loc>https://kavyta.site/testimonials</loc></url>
+  <url><loc>https://kavyta.site/contact</loc></url>
+  <url><loc>https://kavyta.site/blog</loc></url>
 </urlset>
